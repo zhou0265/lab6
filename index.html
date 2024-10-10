@@ -49,6 +49,42 @@
 	margin-top: 50px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+thead th {
+  background-color: #666666;
+  color: white;
+}
+
+tbody th {
+  background-color: #d9d9d9;
+}
+
+tbody td {
+  background-color: #f2f2f2;
+}
+
+th[rowspan] {
+  background-color: #666666;
+  color: white;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #e6e6e6;
+}
+
+
+
 	</style>
 </head>
 
@@ -79,7 +115,7 @@
 		<div class="app-bar">
 			<div class="container">
 				<div class="row">
-					<section class="col-xs-12">
+					<section class="col-xs-12" role="region" label="region">
 						<h2 class="wb-inv">Name of Web application</h2>
 						<a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
 					</section>
@@ -113,7 +149,7 @@
 
 	</header> <!-- end of header-->
 
-	<main property="mainContentOfPage" class="container">
+	<main property="mainContentOfPage" class="container" role="main">
 		<h1>Welcome</h1>
 		<p>
 			<h2>Hi/Max Real Estate & Houses</h2>
@@ -138,9 +174,37 @@
 					<h2>Why choosing HI/Max</h2>
 					<div>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community focused, and our agents are too!</div>
 					<h3>Stats of HI/Max</h3>
-
-
-
+					
+					<table role="presentation">
+						<col>
+						<colgroup span="2"></colgroup>
+						<colgroup span="2"></colgroup>
+						<tr>
+							<th rowspan="2" id="tb14">Year</th>
+							<th colspan="2" scope="colgroup" id="tb15">Sold Properties</th>
+							<th colspan="2" scope="colgroup" id="tb16">Average selling price</th>
+						  </tr>
+						  <tr>
+							<th scope="col" id="tb19" headers="tb15">Quebec</th>
+							<th scope="col" id="tb20" headers="tb15">Ontario</th>
+							<th scope="col" id="tb21" headers="tb16">Single house</th>
+							<th scope="col" id="tb22" headers="tb16">Condo</th>
+						  </tr>
+						  <tr>
+							<th scope="row" id="tb25" headers="tb14">2021</th>
+							<td headers="tb15 tb19 tb25">50</td>
+							<td headers="tb15 tb20 tb25">100</td>
+							<td headers="tb16 tb21 tb25">$500,00</td>
+							<td headers="tb16 tb22 tb25">189,000</td>
+						  </tr>
+						  <tr>
+							<th scope="row" id="tb33" headers="tb14">2022</th>
+							<td headers="tb15 tb19 tb33">100</td>
+							<td headers="tb15 tb20 tb33">200</td>
+							<td headers="tb16 tb21 tb33">$780,00</td>
+							<td headers="tb16 tb22 tb33">240,000</td>
+						  </tr>
+					</table>
 				</p>
 
 
@@ -195,7 +259,7 @@ Read more
 
 
 	</main>
-	<footer role="contentinfo" aria-label="Footer navigation" id="wb-info" class=" wb-navcurr-inited">
+	<footer role="contentinfo" aria-label="Footer navigation" id="wb-info" class="wb-navcurr-inited">
 		<div class="gc-sub-footer">
 			<div class="container d-flex align-items-center">
 				<div>
