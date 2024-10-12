@@ -121,15 +121,15 @@ a{
 				<div class="row">
 					<ul role="menubar" class="list-inline menu">
 						<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
-								role="menuitem">Home</a></li>
+							aria-label="Go to home page" role="menuitem">Home</a></li>
 						<li><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
-								role="menuitem">Buying</a></li>
+							aria-label="Learn about buying properties"	role="menuitem">Buying</a></li>
 						<li><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
-								role="menuitem">Selling</a></li>
+							aria-label="Learn about selling properties"	role="menuitem">Selling</a></li>
 						<li><a class="item" href="faq-en.html" tabindex="-1" aria-posinset="6" aria-setsize="7"
-								role="menuitem">FAQs</a></li>
+							aria-label="View frequently asked questions"	role="menuitem">FAQs</a></li>
 						<li><a class="item" href="contact-en.html" tabindex="-1" aria-posinset="7" aria-setsize="7"
-								role="menuitem">Contact us</a></li>
+							aria-label="Contact us"	role="menuitem">Contact us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -138,12 +138,12 @@ a{
 
 	</header> <!-- end of header-->
 
-	<main property="mainContentOfPage" class="container" role="main" aria-label="Main Content">
+	<main id="main-content" property="mainContentOfPage" class="container" role="main" aria-label="Main Content">
 		<h1>Welcome to Hi/Max Real Estate</h1>
 		<!-- <p>Content A here</p> -->
 			<h2>Hi/Max Real Estate & Houses</h2>
 			<p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
-			<a href="http://google.ca">Let's get started</a>
+			<a href="http://google.ca" aria-label="Get started with buying or selling a home">Let's get started</a>
 
 		<div class="row">
 			<aside class="col-md-4 pull-right" role="complementary" aria-label="Additional Information">
@@ -151,21 +151,20 @@ a{
 				<h3>Related resources</h3>
 				<p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move. </p>
 				<ul>
-					<li><a href="http://google.ca">Looking for an upgrade?</a></li>
-					<li><a href="http://google.ca">Buying tips</a></li>
-					<li><a href="http://google.ca">How much is your current home worth?</a></li>
+					<li><a href="http://google.ca" aria-label="Learn more about upgrading your home">Looking for an upgrade?</a></li>
+					<li><a href="http://google.ca" aria-label="Get tips on buying a home">Buying tips</a></li>
+					<li><a href="http://google.ca" aria-label="Estimate the worth of your current home">How much is your current home worth?</a></li>
 				</ul>
-
-				
 			</aside>
 			
 			<section aria-label="Why Choosing Hi/Max" class="col-md-8">
 				<!-- <p>Content C here</p> -->
-				<h2>Why choosing HI/Max</h2>
+				<h3>Why choosing HI/Max</h3>
 				<div>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community focused, and our agents are too!</div>
-				<h3>Stats of HI/Max</h3>
+				<h4>Stats of HI/Max</h4>
 			
-				<table role="presentation">
+				<table role="presentation" aria-labelledby="table-title">
+					<caption id="table-title">Statistics of properties sold by Hi/Max Real Estate</caption>
 					<colgroup span="2"></colgroup>
 					<colgroup span="2"></colgroup>
 					<tr>
@@ -194,7 +193,6 @@ a{
 						<td headers="tb16 tb22 tb33">$240,000</td>
 						</tr>
 				</table>
-			
 			</section>
 	</div>
 	<section aria-label="More Resources on How to Choose an Agent">
@@ -209,7 +207,7 @@ a{
 				<img src="1.png" alt="">
 				<figcaption>
 				
-				<a href="http://google.ca">What Are The Risks of Selling a Home Yourself?</a>
+				<a href="http://google.ca" aria-label="Learn about risks of selling a home yourself">What Are The Risks of Selling a Home Yourself?</a>
 				<p>
 					We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals. 
 Read more
@@ -223,7 +221,7 @@ Read more
 			<figure>
 				<img src="2.png" alt="">
 				<figcaption>
-				<a href="http://google.ca">7 Questions to Ask a Real Estate Agent Before You Commit</a>
+				<a href="http://google.ca" aria-label="7 Questions to Ask a Real Estate Agent Before You Commit">7 Questions to Ask a Real Estate Agent Before You Commit</a>
 				<p>
 					According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent, including higher sale prices. 
 
@@ -237,14 +235,14 @@ Read more
 			<figure>
 				<img src="3.png" alt="">
 				<figcaption>
-					<a href="http://google.ca">8 Reasons to Hire an Agent When Selling Your Home</a>
+					<a href="http://google.ca" aria-label="8 Reasons to Hire an Agent When Selling Your Home">8 Reasons to Hire an Agent When Selling Your Home</a>
 					<p>
 						With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.
 					</p>
 				</figcaption>
 			</figure>
 		</section>
-	<div class="pagedetails">
+	<div class="pagedetails" aria-label="Page details">
 		<dl id="wb-dtmd">
 			<dt>Date modified: </dt>
 			<dd><time property="dateModified">2023-10-13</time></dd>
