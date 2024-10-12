@@ -55,16 +55,35 @@ table {
             margin-top: 10px;
         }
 
-th, td {
-	border: 1px solid #000;
-	padding: 8px;
-	text-align: center;
+table,th, td {
+	border: 2px solid black;
+
 }
 
-th {
-	background-color: #666;
+th, td {
+        border-width: 1px; /* Thinner inner borders */
+        padding: 8px;
+        text-align: center;
+    }
+
+
+th[scope="col"] {
+	background-color: #777;
+	color: #000;
+}
+th[scope="row"]{
+	background-color: #777;
+	color: #000;
+}
+th[rowspan]{
+	background-color: #000;
 	color: #fff;
 }
+th[colspan]{
+	background-color: #000;
+	color: #fff;
+}
+
 a{
         color: blue;
         text-decoration: underline; 
