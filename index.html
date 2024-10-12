@@ -20,7 +20,7 @@
 
  .social  a svg {
       width: 30px;
-      fill: #91929a;
+      fill: #666;
     }
 	
 .search-area {
@@ -66,34 +66,21 @@ th, td {
         text-align: center;
     }
 
-
-th[scope="col"] {
-	background-color: #777;
-	color: #000;
-}
-th[scope="row"]{
-	background-color: #777;
-	color: #000;
-}
-th[rowspan]{
-	background-color: #000;
-	color: #fff;
-}
-th[colspan]{
-	background-color: #000;
-	color: #fff;
+th[rowspan], th[colspan] {
+    background-color: #000; /* Black for top header */
+    color: #FFF; /* White text for contrast */
 }
 
-a{
-        color: blue;
-        text-decoration: underline; 
-    }
+th[scope="col"], th[scope="row"] {
+    background-color: #777; /* Grey background for second row */
+    color: #FFF; /* White text for improved contrast */
+}
 
 
-.footer-links{
-	    color: blue;
-        text-decoration: underline;
-    }
+a, .footer-links {
+    color: #0000EE; /* Darker blue for better contrast */
+    text-decoration: underline;
+}
 
 
 	</style>
